@@ -1,0 +1,52 @@
+.navbar {
+  margin: 3% 0;
+  ul {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    a {
+      text-transform: uppercase;
+      font-size: 16px;
+      color: #8f8d8d;
+      transition: 0.3s;
+    }
+    a:hover {
+      padding-bottom: 4px;
+      border-bottom: 1px solid #000;
+    }
+  }
+}
+
+@media (max-width: 1080px) {
+  .navbar {
+    ul {
+      width: 90%;
+    }
+  }
+}
+@media (max-width: 750px) {
+  .navbar {
+    margin-bottom: 7%;
+    ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      a {
+        font-size: small;
+      }
+    }
+  }
+}
+@media (max-width: 375px) {
+  .navbar {
+    ul {
+      text-align: start;
+      grid-template-columns: 1fr;
+      a {
+        font-size: 12px;
+      }
+    }
+  }
+}

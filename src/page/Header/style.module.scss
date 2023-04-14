@@ -1,0 +1,40 @@
+.header {
+  &_flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &_logo {
+    width: 10%;
+    img {
+      width: 100%;
+    }
+  }
+  &_links {
+    a {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: black;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .header {
+    &_logo {
+      width: 20%;
+    }
+    &_links {
+      a {
+        font-size: small;
+      }
+    }
+  }
+}
+@media (max-width: 450px) {
+  .header {
+    &_logo {
+      width: 30%;
+    }
+  }
+}
